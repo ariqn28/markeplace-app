@@ -60,7 +60,6 @@
                     <table class="table-auto w-full">
                         <thead class="bg-blue-100 border-b border-blue-200">
                             <tr>
-                                <th class="px-6 py-4 text-left text-blue-900 font-bold">No</th>
                                 <th class="px-6 py-4 text-left text-blue-900 font-bold">ID</th>
                                 <th class="px-6 py-4 text-left text-blue-900 font-bold">Pelanggan</th>
                                 <th class="px-6 py-4 text-left text-blue-900 font-bold">Total</th>
@@ -72,7 +71,6 @@
                         <tbody class="divide-y divide-gray-100">
                             @foreach($orders as $order)
                                 <tr class="hover:bg-blue-50 transition">
-                                    <td class="px-6 py-4 font-bold text-gray-700">{{ $orders->firstItem() + $loop->index }}</td>
                                     <td class="px-6 py-4 font-bold text-gray-700">#{{ $order->id }}</td>
                                     <td class="px-6 py-4">
                                         <div class="font-semibold text-gray-800">{{ $order->user->name }}</div>
